@@ -1,0 +1,103 @@
+/* Skills.css */
+.skills {
+  padding: 160px 56px;
+}
+
+.skills__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 100px;
+}
+
+.skills__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(56px, 7vw, 100px);
+  font-weight: 300;
+  line-height: 0.85;
+  letter-spacing: -2px;
+}
+
+.skills__title em {
+  font-style: italic;
+  color: #d4b896;
+}
+
+.skills__intro {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(245, 242, 237, 0.4);
+}
+
+.skills__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.skill-col {
+  background: #070707;
+  padding: 56px 40px;
+}
+
+.sk-col-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+  color: #d4b896;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sk-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sk-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: padding-left 0.3s;
+}
+
+.sk-item:hover {
+  padding-left: 12px;
+}
+
+.sk-item:hover .sk-name {
+  color: #f5f2ed;
+}
+
+.sk-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(245, 242, 237, 0.4);
+  transition: color 0.3s;
+}
+
+.sk-level {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 11px;
+  color: #b8956a;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .skills__header { grid-template-columns: 1fr; }
+  .skills__cols   { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .skills    { padding: 80px 28px; }
+  .skill-col { padding: 40px 28px; }
+}

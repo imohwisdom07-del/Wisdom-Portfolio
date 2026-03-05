@@ -1,0 +1,227 @@
+/* Projects.css */
+.projects {
+  padding: 160px 56px;
+  background: #1a1917;
+}
+
+.projects__head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  margin-bottom: 100px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.projects__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(56px, 8vw, 120px);
+  font-weight: 300;
+  line-height: 0.85;
+  letter-spacing: -2px;
+}
+
+.projects__title em {
+  font-style: italic;
+  color: #d4b896;
+}
+
+.projects__meta {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(245, 242, 237, 0.4);
+  text-align: right;
+  line-height: 2;
+}
+
+/* Card */
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 2px;
+  overflow: hidden;
+  cursor: none;
+  transition: border-color 0.4s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  border-color: rgba(184, 149, 106, 0.3);
+}
+
+.project-card:hover .pc-name {
+  letter-spacing: -3px;
+}
+
+.project-card:hover .pc-arrow {
+  transform: translate(6px, -6px);
+  color: #b8956a;
+}
+
+.project-card:hover .pc-visual {
+  transform: scale(1.03);
+}
+
+.project-card:hover .pc-num {
+  color: #b8956a;
+}
+
+.pc-info {
+  padding: 64px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1a1917;
+}
+
+.pc-num {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: rgba(245, 242, 237, 0.4);
+  margin-bottom: 48px;
+  transition: color 0.3s;
+}
+
+.pc-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(36px, 4vw, 68px);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  transition: letter-spacing 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pc-name em {
+  font-style: italic;
+  color: #d4b896;
+  display: block;
+}
+
+.pc-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 48px;
+}
+
+.pc-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pc-tag {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(245, 242, 237, 0.4);
+}
+
+.pc-tag--featured {
+  color: #b8956a;
+}
+
+.pc-arrow {
+  font-size: 32px;
+  color: rgba(245, 242, 237, 0.4);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 1;
+}
+
+/* Visual panels */
+.pc-visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pv-art {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pv-art--text {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 80px;
+  color: rgba(184, 149, 106, 0.08);
+  font-weight: 300;
+  letter-spacing: -3px;
+}
+
+.art-label {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(245, 242, 237, 0.4);
+}
+
+.art-vestige {
+  background:
+    radial-gradient(circle at 30% 70%, rgba(184, 149, 106, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 70% 30%, rgba(184, 149, 106, 0.05) 0%, transparent 50%);
+}
+
+.art-vestige svg {
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+}
+
+.art-p2 {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(184, 149, 106, 0.04) 40px,
+    rgba(184, 149, 106, 0.04) 41px
+  );
+}
+
+.art-p3 {
+  background-image: radial-gradient(circle, rgba(184, 149, 106, 0.3) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.art-p4 {
+  background: linear-gradient(to bottom, transparent 0%, rgba(184, 149, 106, 0.03) 50%, transparent 100%);
+}
+
+.art-p4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(184, 149, 106, 0.4);
+  top: 50%;
+  box-shadow: 0 0 40px 10px rgba(184, 149, 106, 0.1);
+  animation: scan 4s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0%, 100% { top: 20%; }
+  50%       { top: 80%; }
+}
+
+@media (max-width: 1024px) {
+  .project-card { grid-template-columns: 1fr; }
+  .pc-visual { min-height: 240px; }
+  .projects__head { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .projects { padding: 80px 28px; }
+  .pc-info  { padding: 40px 28px; }
+}
