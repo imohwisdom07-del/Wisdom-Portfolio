@@ -13,11 +13,12 @@ export const META = {
   linkedin: "https://linkedin.com/in/wisdom-imoh-362b42381/",
   vestige: "https://vestige-edit.vercel.app",
   emax: "https://e-max-trade-p3nd.vercel.app",
+  habits: "https://habit-tracker-six-virid-44.vercel.app/",
 };
 
 export const STATS = [
   { value: "1+", label: "Years Active" },
-  { value: "2",  label: "Projects Shipped" },
+  { value: "3",  label: "Projects Shipped" },
   { value: "∞",  label: "Lines Committed" },
 ];
 
@@ -44,21 +45,21 @@ export const PROJECTS = [
   },
   {
     id: "003",
-    name: "PROJECT",
-    sub: "Three.",
-    tags: ["Firebase", "Realtime"],
-    featured: false,
-    year: "2025",
+    name: "HABIT ARCHITECT",
+    sub: "Productivity App",
+    tags: ["React · Vite", "Web App"],
+    featured: true,
+    year: "2026",
     art: "p3",
-    link: "#",
+    link: "https://habit-tracker-six-virid-44.vercel.app/",
   },
   {
     id: "004",
     name: "PROJECT",
-    sub: "Four.",
-    tags: ["Python", "Automation"],
+    sub: "Coming Soon.",
+    tags: ["In Progress"],
     featured: false,
-    year: "2024",
+    year: "2026",
     art: "p4",
     link: "#",
   },

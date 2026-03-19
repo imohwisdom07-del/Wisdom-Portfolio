@@ -59,14 +59,14 @@ export default function About() {
           className={`reveal ${body.visible ? 'visible' : ''}`}
         >
           <p className="about__body">
-            A fullstack developer based remotely — engineering digital products
-            from the ground up. Frontend interfaces, backend systems, database
-            architecture. I handle every layer.
+            A frontend developer based remotely — building polished, well-crafted
+            web applications using React.js, JavaScript, and CSS. I care about
+            how things look, how they feel, and how users experience them.
           </p>
           <p className="about__body">
-            VESTIGE is one of my own products — a luxury e-commerce platform
-            built entirely by me, with cart state management, dynamic routing,
-            wishlist architecture, and a Vercel deployment pipeline.
+            VESTIGE and E-Max Trade are two of my own products — a luxury
+            e-commerce platform and a full-featured crypto merchant trading
+            platform, both built entirely by me and live in production.
           </p>
         </div>
 

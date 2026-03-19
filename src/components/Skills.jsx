@@ -41,8 +41,7 @@ export default function Skills() {
           ref={intro.ref}
           className={`skills__intro reveal ${intro.visible ? 'visible' : ''}`}
         >
-          Tools I reach for when engineering production-grade systems —
-          frontend to backend, pixel to server.
+          "Tools I actually know and use — built and proven across three live projects."
         </p>
       </div>
 
