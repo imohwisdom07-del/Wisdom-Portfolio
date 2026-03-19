@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import './Hero.css';
 import { META, CODE_SNIPPETS } from '../data/portfolioData';
-
 export default function Hero() {
   useEffect(() => {
     const container = document.getElementById('codeLines');

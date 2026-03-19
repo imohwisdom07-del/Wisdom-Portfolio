@@ -4,19 +4,20 @@
 export const META = {
   name: "Imoh Wisdom",
   alias: "davaboi",
-  role: "Fullstack Developer",
+  role: "Frontend Developer",
   location: "Available Worldwide — Remote",
-  email: "Imohwisdom07@email.com",
+  email: "Imohwisdom07@gmail.com",
   status: "Open to Work",
   preference: "Remote / Hybrid",
   github: "https://github.com/imohwisdom07-del",
-  linkedin: "https://linkedin.com",
+  linkedin: "https://linkedin.com/in/wisdom-imoh-362b42381/",
   vestige: "https://vestige-edit.vercel.app",
+  emax: "https://e-max-trade-p3nd.vercel.app",
 };
 
 export const STATS = [
-  { value: "3+", label: "Years Active" },
-  { value: "12", label: "Projects Shipped" },
+  { value: "1+", label: "Years Active" },
+  { value: "2",  label: "Projects Shipped" },
   { value: "∞",  label: "Lines Committed" },
 ];
 
@@ -24,7 +25,7 @@ export const PROJECTS = [
   {
     id: "001",
     name: "VESTIGE",
-    sub: "E-Commerce",
+    sub: "Luxury E-Commerce",
     tags: ["React · Vite", "E-Commerce"],
     featured: true,
     year: "2026",
@@ -33,13 +34,13 @@ export const PROJECTS = [
   },
   {
     id: "002",
-    name: "PROJECT",
-    sub: "Two.",
-    tags: ["Node.js", "PostgreSQL"],
-    featured: false,
-    year: "2025",
+    name: "E-MAX TRADE",
+    sub: "Crypto Platform",
+    tags: ["React · Vite", "Fintech"],
+    featured: true,
+    year: "2026",
     art: "p2",
-    link: "#",
+    link: "https://e-max-trade-p3nd.vercel.app",
   },
   {
     id: "003",
@@ -67,33 +68,21 @@ export const SKILLS = [
   {
     category: "Frontend",
     items: [
-      { name: "React",          level: "Expert" },
-      { name: "JavaScript",     level: "Expert" },
-      { name: "TypeScript",     level: "Advanced" },
-      { name: "CSS / Tailwind", level: "Expert" },
-      { name: "Vite",           level: "Advanced" },
-      { name: "HTML5",          level: "Expert" },
-    ],
-  },
-  {
-    category: "Backend",
-    items: [
-      { name: "Node.js",    level: "Advanced" },
-      { name: "PostgreSQL", level: "Advanced" },
-      { name: "Firebase",   level: "Advanced" },
-      { name: "REST APIs",  level: "Expert" },
-      { name: "Express",    level: "Advanced" },
-      { name: "Supabase",   level: "Proficient" },
+      { name: "React",          level: "Advanced" },
+      { name: "JavaScript",     level: "Advanced" },
+      { name: "CSS",            level: "Advanced" },
+      { name: "HTML5",          level: "Advanced" },
+      { name: "Vite",           level: "Proficient" },
+      { name: "React Router",   level: "Proficient" },
     ],
   },
   {
     category: "Tools",
     items: [
-      { name: "Git / GitHub", level: "Expert" },
-      { name: "Vercel",       level: "Advanced" },
-      { name: "Figma",        level: "Proficient" },
-      { name: "Postman",      level: "Advanced" },
-      { name: "VS Code",      level: "Expert" },
+      { name: "Git / GitHub", level: "Proficient" },
+      { name: "Vercel",       level: "Proficient" },
+      { name: "VS Code",      level: "Advanced" },
+      { name: "Figma",        level: "Beginner" },
     ],
   },
 ];
